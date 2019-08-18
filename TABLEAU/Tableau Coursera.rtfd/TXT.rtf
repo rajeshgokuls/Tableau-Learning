@@ -1,0 +1,1752 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\fswiss\fcharset0 Arial-BoldMT;\f4\fswiss\fcharset0 Arial-ItalicMT;\f5\fswiss\fcharset0 Helvetica-BoldOblique;
+\f6\froman\fcharset0 Times-Roman;\f7\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red42\green44\blue46;
+\red83\green83\blue83;\red252\green73\blue64;\red39\green170\blue96;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c80000;\cssrgb\c100000\c100000\c100000;\cssrgb\c21569\c22745\c23529;
+\cssrgb\c40000\c40000\c40000;\cssrgb\c100000\c38374\c31601;\cssrgb\c16471\c70980\c45098\c14902;\cssrgb\c0\c0\c93333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic.png \width10660 \height8840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+{{\NeXTGraphic Pasted Graphic 1.png \width10480 \height9000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+{{\NeXTGraphic Pasted Graphic 2.png \width11440 \height9340 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+{{\NeXTGraphic Pasted Graphic 3.png \width10120 \height7880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+.\'a0\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs36 \cf2 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\i0\b0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 1:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 That's what visualizing data does for you.\
+\
+
+\f2\i\b\fs34 \'a0It helps you figure out what your data mean efficiently
+\f1\i0\b0 .
+\fs28 \
+\
+
+\f2\i\b\fs34 \'a0And in the process of doing so helps you narrow in on what factors you should take\'a0into consideration in your statistical models of predictive algorithms.
+\f1\i0\b0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 1:43\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Over the next two weeks we're going to learn how to use the program Tableau to\'a0implement this type of visualization.\cf4 \cb1 \
+\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs44 \cf4 WHY TABLEAU?\
+\
+Square product:
+\f1\b0\fs28 \cf2 \cb3 .\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 0:42\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> So I'd say that the data that we work with in Analytics\'a0at Square primarily comes from databases, from a variety of different services.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 0:51\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\i\fs34 \cf2 Ours live primarily in MySQL,
+\f1\i0\fs28  
+\f4\i\fs36 although to access them we use both MySQL Hive and\'a0Vertica which is a high performance column store database.
+\f1\i0\fs28 \'a0S
+\f4\i\fs38 o interacting with those we have wrappers for writing queries in Ruby and\'a0Python that we use to kind of extract data and then interact with programatically.
+\f1\i0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 1:12\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\i\fs36 \cf2 And then once we have data to work with we primary use Tableau,\'a0some people use Excel.\'a0The most widely used tool for analytics in the world.
+\f1\i0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 1:23\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> Ryan is one of a growing group of data enthusiasts who has made Tableau one of\'a0his go-to analytic platforms.\'a0\
+\
+That's because
+\f2\i\b\fs40  Tableau is an extremely powerful visualization tool\'a0that allows you to make visualizations of your data in seconds
+\f1\i0\b0\fs28 .\'a0\
+\
+Whereas other tools, like Excel, may require minutes, or even tens of minutes,\'a0to make the exact same visualizations.\'a0\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs40 \cf2 Further, one of the things that makes Tableau unique,\'a0is that when you make these visualizations, Tableau automatically uses\'a0best practices in visualisation science to format the graph view,\'a0so that you pay attention to the correct things.\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\i0\b0\fs28 \cf2 \'a0It can do this because the founders were world leaders in visualization computer\'a0science from Stanford.\'a0You may have noticed that the most recent versions of some more traditional\'a0analysis programs like Excel started incorporating more advanced visualisation\'a0features as well.\'a0Many say Tableau was the main motivation behind these changes.\'a0Tableau was so unique when it started that other companies had to adapt in order to\'a0stay competitive.\'a0Although other companies are trying to catch up,\'a0\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs40 \cf2 Why TABLEAU?\
+\
+
+\fs44 \'a01.
+\f1\b0\fs28  
+\f4\i\fs46 One of the most important features in the professional version of Tableau is that it\'a0can connect to most kinds of databases and import data of insanely big sizes.\'a0
+\f2\b \cb6 Whereas Excel breaks after importing 1 million rows,
+\f4\b0\fs28  
+\f1\i0 \cb3 \
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\i\fs38 \cf2 Tableau,\'a0at least the professional version of it, is ready made for big data.\'a0In fact, under the hood, Tableau is actually running many of the 
+\f2\b same database\'a0queries you will learn how to run by hand in course four of this specialization.
+\f4\b0 \'a0Let's hear how Ryan describes his use of Tableau.
+\f1\i0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 2:45\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> So I use Tableau a couple of times a week, and have for many years.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 2:50\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs38 \cf2 2. For me, it's the fastest way to turn a table of data\'a0into a picture about what's going on.\'a0It allows me to very rapidly interact with it,\'a0to understand different slices in different views.\'a0Certainly I could construct all of the things that Tableau generates\'a0in SQL queries, but manually writing them is quite tedious.\'a0So what I like to do is, start with a fairly large data set, load it directly\'a0into Tableau, interact with it to try and figure out what's going on.
+\f1\i0\b0\fs28 \'a0\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 3:25\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs40 \cf2 3.
+\fs46 Another feature that Tableau is famous for is it's very easy to make dashboards
+\f1\b0\fs28 .\'a0Much like dashboards in cars that allow drivers to monitor important things going\'a0on with the car.\'a0Business intelligence dashboards give you at a glance views of\'a0key business metrics or indicators real time as they're happening right now.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 3:41\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Their goal is to allow anybody looking at them to immediately know\'a0whether something is going wrong or going right with the business.\'a0They're often designed and configured by an analyst, but then published to people\'a0all over the company so that everybody can keep an eye on them.\'a0Programs like Tableau allow for these dashboards to be interactive so\'a0that people all over the company can play around with them and\'a0get a feel for what the data will look like.\'a0\
+\
+\
+Here's an example of what a business dashboard might look like.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:04\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs58 \cf2 >> This is a sales dashboard from the Tableau website:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 4.png \width13700 \height8900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b\fs58 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs28 \cf2 \'a0
+\f3\b\fs34 The most important information is up here at the 
+\f1\b0\fs28 top\'a0where it will get the most attention.\'a0You can see the Total Sales, the Number of Deals, the Avg Deal Size and\'a0the Revenue per Salesperson.\'a0But, of course,\'a0there's a lot of other interesting information on this dashboard, as well.\'a0Over here, you can see the Revenue Over Time for each year, individually.\'a0You can also see the Running Total.\'a0And again, if you hover over it, it even gives you more data.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:33\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Down here, you see the sales team performance.\'a0So you can actually see how each person on the sales team is doing.\'a0And over here you have the revenue per quarter.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:43\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Now perhaps the most important part of this dashboard is that it's interactive.\'a0So anyone looking at this dashboard, can change and\'a0play with the data to get exactly the information they need.\'a0Up here you can change the date and the dashboard\'a0automatically updates to show you exactly the date you are asking for.\'a0You can also change the country or\'a0the region let say we just want to look at Latin America.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:08\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Or the sales team let say, we just want to look at the enterprise sales team.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:14\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Each time the dashboard automatically updates and\'a0tell you exactly the information you've asked for.\'a0This is a very powerful tool.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:22\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> As you can imagine now after seeing one,\'a0
+\f2\i\b\fs46 dashboard's have the potential to be very useful and compelling tools for companies.\'a0Let me tell you, especially when they are linked to databases,\'a0they can also save an analyst a lot of time and become an analyst's best friend.
+\f3\i0\fs40 \'a0Let's hear what Tableau's dashboard functionality did for Ryan.
+\f1\b0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:38\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> So we used both Tableau desktop and Tableau server.\'a0So I think my favorite feature is that I can, at one point do an analysis,\'a0build a dashboard, publish it on the web, and allow people to interact with\'a0it whenever suits them, with data that refreshes on a reasonable time scale.\'a0So I can build something once, and make it available and refreshed all the time.\'a0So before I used Tableau, I had a job where I had to every Monday\'a0run a bunch of SQL queries and copy and paste the data into Excel and\'a0then run Pivot Tables on it, and then email it to someone.\'a0So I got back quite a lot of time by being able to say here is a dashboard that\'a0has all of this information, it's available whenever you want.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 6:23\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 And I also helped work on a tool to take a screenshot of that dashboard and\'a0email it to people so that they could get it in their inbox.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 6:32\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> You heard Ryan talk about Tableau desktop and\'a0server and me talk about the professional version of Tableau desktop.\'a0There are many different versions of Tableau,\'a0almost slightly different capabilities.\'a0There's a completely free version called Tableau Public which includes\'a0a Tableau Public interface you can have in your desktop.\'a0This version lets you do almost everything the other versions can do.\'a0But your data can't have more than 1,000,000 rows,\'a0you have to save your data to their website, not your desktop.\'a0And you cannot connect to databases, only to Excel spreadsheets, text files, and\'a0Microsoft access files.\'a0In my experience connecting to really big data files can also sometimes be\'a0a bit slow.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 5.png \width16260 \height7320 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 7:06\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\i\fs38 \cf2 There are also paid Tableau desktop versions, one for personal use and one for\'a0professional use.\'a0These both allow you to save data and workbooks to your desktop and\'a0ways to share your work with others via online tools.\'a0Luckily for us, Tableau has donated Tableau desktop subscriptions to our\'a0course, so you will get to experience first hand how to use them.\'a0In addition to saving files to your desktop with a normal subscription\'a0service, the personal version allows you to save data to Tableau online,\'a0Tableau server on the cloud.\'a0The professional version is the only version that can connect to databases, and\'a0therefore is really the only one that can efficiently handle those\'a0really big specialty datasets.\'a0It is also the only one that connect to Tableau server.\'a0Tableau server is basically a way to share things locally at your own company\'a0in a very secure and controllable way.\'a0No matter what version your company has available, Tableau is a very\'a0powerful tool that will dramatically improve the efficiency of your analysis.\'a0It will help you clean your data, find patterns in your data,\'a0test your hypothesis, and tell stories with your data.\'a0We've dedicated so much time to it in the specialization, because no matter whether\'a0you have a very strong quantitative background or no quantitative background\'a0at all, we truly believe Tableau will provide a lot of new value for you.\'a0With that, are you excited to become a Tableau expert?\'a0I hope so.
+\f3\i0\b\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf4 \
+\
+\
+TIPs for becoming a DATA ANALYST:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 6.png \width15580 \height4120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\fs32 Skillset should be dynamic, self motivate to try new things, easlity adapt to new env, curious and deep understand 
+\f3\b\fs44 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 7.png \width15280 \height4320 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs40 \cf0 Business question into numbers to be tested\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 9.png \width13680 \height8080 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 10.png \width13760 \height8260 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 11.png \width13180 \height7260 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 12.png \width14340 \height7960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Before we get started, I wanted to give you some of my own personal advice\'a0about how to use data to improve business processes.\'a0Here are my top ten tips for learning to become and\'a0\cb7 analyst who consistently creates value out of data.\'a0\cb3 Tip number 1, Ask Questions,\'a0Nourish Curiosity, and Embrace the Unknown.\'a0The business data analytics field is constantly moving, changing, and evolving.\'a0That makes it very exciting to be part of, but it also means that,\'a0to stay competitive, your skill set will need to be dynamic, too.\'a0As a consequence,\'a0the people who are most successful in this field are the people who like learning,\'a0are self-motivated to try new things, and who easily adapt to new environments.\'a0The best way to excel and standout is to be curious and unstoppable in your desire\'a0to deeply understand problems and come up with creative solutions.\'a0Tip number 2,\'a0Start Thinking about Everything You See as a Dependent or Independent Variable.\'a0Your most fundamental job as a data analyst would be to figure out how to make\'a0every business question you come across into numbers that can be tested.\'a0To analyze those numbers, you need to know which ones you are going to treat as\'a0dependent variables and which ones you are going to treat as independent variables.\'a0The dependent variable is the measure you are most interested in understanding.\'a0In your analysis, you examine it to see if its value is dependent on, or\'a0changes in response to, other factors.\'a0Those other factors are the independent variables.\'a0So for example, when I ask, does the amount of ice cream I have for\'a0breakfast affect my happiness that day?\'a0My happiness that day is the dependent variable,\'a0because it is the phenomenon I am measuring and I'm most interested in.\'a0The amount of ice cream I eat,\'a0is the independent variable because I want to see if it affects my happiness.\'a0And I assure you, it does affect my happiness, by the way.\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 13.png \width14820 \height8300 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 1:44\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Let's look at an example from business data.\'a0The Nielson Company famously collects data from a sample of consumers\'a0who are paid to track everything they buy.\'a0When those consumers come home from a store, they scan the barcodes of every\'a0single item they bought that day into a special device that saves the data and\'a0sends it to a huge database where it can be mined in combination with demographics\'a0and other people's data to determine patterns in customer purchasing behavior.\'a0
+\f2\i\b\fs34 With this data, you can ask questions like, does the amount of organic\'a0meat people buy relate to how many years of education they have?
+\f1\i0\b0\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 2:14\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs34 \cf2 In this data question,\'a0the amount of organic meat people bought is the
+\f2\i\b\fs48  dependent variable 
+\f1\i0\b0\fs34 because it\'a0is the thing you are measuring and interested in understanding.\'a0\
+\
+The years of education people have is the 
+\f2\i\b\fs46 independent variable, 
+\f1\i0\b0\fs34 because you want to\'a0see if it affects or influences organic meat purchasing behavior.
+\fs28 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 2:30\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs38 \cf2 Turning questions into numbers you can analyze can feel unnatural to do in many\'a0situations.\'a0So start practicing now with relationships you see around you.\'a0Every time you see a relationship ask yourself,\'a0if I wanted to know more about this relationship,\'a0what would be the dependent variable and what would be my independent variable?\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 14.png \width16960 \height4040 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 \
+\
+2:51\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs36 \cf2 Tip number 3, explore the advantages and\'a0disadvantages of continuous versus discrete variables.\'a0Continuous variables are measurements that can take on an infinite number of values\'a0between a minimum and maximum value,\'a0like you would have if you were taking a measurement with a ruler.\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs28 \cf2 \'a0Discrete variables are measurements that can take only a specific set of values,\'a0like if you wanted to record whether a customer is a member of the Democratic,\'a0Republican or independent political party.\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs40 \cf2 \'a0If you had a question about conversion rates on your website,\'a0you could either represent conversion rates as a percentage in a continuous\'a0variable that would have an infinite number of possibilities between 1 and\'a0100%, or you could represent conversion rates as a discrete variable\'a0with only three possible values of high, medium or low.
+\f1\i0\b0\fs28 \'a0\
+\
+\
+Whether you treat variables as continuous or discrete can have a big impact on what\'a0statistical models you will use or what strategies you will have available to you.\'a0And it can also have a big impact on the type of information\'a0you are likely to glean.\'a0\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 25.png \width15660 \height8820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 15.png \width16460 \height9460 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 Discrete variables are generally easier to analyze and\'a0understand but they're also often less precise than continuous variables.\'a0And if they're designed poorly, they can hide important patterns.\'a0Continuous variables on other hand, can often be harder to interpret by eye,\'a0but they can provide detailed information about relationships.\'a0\
+\
+When we start making visualizations later in the course, you're going to\'a0have to make decisions about whether to make variables discrete or continuous.\'a0Discrete variables tend to be displayed in bar graphs, and\'a0continuous variables tend to be shown in line graphs.\'a0Start paying attention now to charts you see in newspapers, and ads or\'a0stories you see or hear that refer to data to try to convince you of something.\'a0Note which graphs or data stories you find most convincing.\'a0This will help you build intuition for what kinds of variables and graphs will be\'a0most effective to use in your own persuasive arguments in business settings.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:35
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 16.png \width15760 \height6420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+
+\f1 \cf5 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Tip number 4, make sure you always listen, and contribute.\'a0\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs34 \cf2 Data analysis projects are almost always collaborations.
+\f1\b0\fs28 \'a0They will not be successful if your team doesn't work together and\'a0if you can't communicate information.\'a0Make it a priority to become a really good listener so\'a0that you are able to incorporate and internalize what other people say.\'a0But also make it a priority to be an active participant\'a0in all project related conversations.\'a0You are being hired for your expertise, and\'a0you need to put it to good use, especially given how much variability there is and\'a0how open companies are to data insights.\'a0This is important to remember, because sometimes, your data analysis will suggest\'a0paths forward that are inconsistent with other people's intuitions.\'a0So, as you move forward, focus on being both a collaborative and\'a0engaged participant in your data analysis projects.\'a0\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 17.png \width12000 \height4260 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 Towards that end, here is my tip number 5.\'a0Train your skepticism muscles.\'a0I'm telling you this from experience.\'a0Whenever you see a really dramatic or surprising effect in your data\'a0that nobody in your team or company expected, 9 times out of 10 or\'a0maybe even 99 times out of 100, it's due to a bookkeeping or coding mistake.\'a0There's probably a bug in your code, a misaligned column in your spreadsheet or\'a0incorrect label somewhere in your dataset.\'a0Similarly, whenever somebody tells you something with extreme confidence,\'a0temper your expectations.\'a0It's probably more complicated and messy than they are making it out to be.\'a0\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 18.png \width11160 \height7160 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Tip number 6, that's why you need to seek details.\'a0Real life situations are messy.\'a0You often need to track down the details of mess in order to get to a vantage point\'a0where you can finally understand what's going on.\'a0This picture could represent a hair ball, a pile of spaghetti,\'a0an abstract painting of an ear, you can't be sure.\'a0But if you have the patience to follow the thread,\'a0you will eventually find the needle and be able to see the big picture.\'a0This goes back to the be curious theme I mentioned before.\'a0Don't be satisfied with taking your data at face value,\'a0be curious about what your data really look like, and what they really mean.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 19.png \width12100 \height9880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 20.png \width9200 \height7360 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 6:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Going hand in hand with this, tip number 7, Cherish Precision.\'a0Being precise allows you to make progress and\'a0rule out inefficient directions much more quickly than vagueness.\'a0In such a dynamic field with so many unknowns\'a0you often won't be able to make precise predictions, hypotheses, or goals.\'a0But I do promise you, once you do, things will get easier.\'a0So I'm not suggesting that you should dogmatically require precision, but\'a0I am suggesting that you should cherish it.\'a0I should warn you that what I just said might be a little controversial.\'a0\
+\
+Some people might, I would argue incorrectly,\'a0believe that precision squashes creatively and innovation.\'a0
+\f2\i\b\fs40 My experience tells me the opposite, that precision allows the most creative and\'a0innovative ideas to become reality.
+\f1\i0\b0\fs28 \'a0But that brings me to tip number 8, \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 21.png \width13300 \height6820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+which is the the best practices in data\'a0analytics are not necessarily the most common practices in data analytics.\'a0It is important for you to know both so that you can choose which kind of practice\'a0will be most successful in a given situation.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 23.png \width9660 \height6340 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\'a0Now, tip number 9.\'a0As I said before, you will almost always be working in teams in business data\'a0projects and the expectations of your teammates and stakeholders matter.\'a0No matter how good an idea you have or how cool your data analysis is, if what you\'a0are going to tell them is contrary to what they expect, it will likely not be\'a0received very well and all your hard work will stop dead in its tracks.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 24.png \width13220 \height5920 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 7:44\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 That now brings us to tip number 10.\'a0Despite what you might have thought when entering a data-driven field,\'a0one of the key skills that will allow you to succeed\'a0is the ability to understand other people's perspective.\'a0In other words, the ability to put yourself in other people's shoes.\'a0You need to know what your partners and stakeholders think and\'a0feel about in order to make your solutions or recommendation successful.\'a0The better you are at anticipating their thoughts and\'a0feelings, the more efficient you will be at your projects.\'a0So make it priority to become an expert in putting yourself in other people's shoes.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 8:16\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 You will see every single one of these concepts come up somewhere in the course,\'a0sometimes multiple times.\'a0I'm telling them to you here in words but\'a0soon you will see how they play out in real life data analysis scenarios as well.\'a0Keep them in the back of your mind because you will definitely hear them again.\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs46 \cf2 ASKING THE RIGH QUESTION:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 26.png \width9060 \height2880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 27.png \width9400 \height6620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5\i\b\fs34 \cf0 REPORT:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.statslice.com/wp-content/uploads/2013/07/2012-State-of-BI-Congress-White-Paper.pdf"}}{\fldrslt 
+\f6\i0\b0\fs24 \cf8 \expnd0\expndtw0\kerning0
+\ul \ulc8 http://www.statslice.com/wp-content/uploads/2013/07/2012-State-of-BI-Congress-White-Paper.pdf}}
+\f6\i0\b0\fs24 \cf8 \expnd0\expndtw0\kerning0
+\ul \ulc8 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone {{\NeXTGraphic Pasted Graphic 28.png \width9640 \height7940 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+
+\f7\b\fs40 STAKE HOLDERS:\
+\
+People who are influenced by your project are called stakeholders\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 29.png \width8980 \height6140 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 30.png \width8820 \height6540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 31.png \width7760 \height3660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs36 \cf0 3rd VIDEO:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 32.png \width7620 \height4220 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 33.png \width12500 \height7420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5\i\b\fs56 \cf0 V - SMART OBJECTIVES:\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 34.png \width13820 \height7940 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5\i\b\fs56 \cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 35.png \width7880 \height4720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 36.png \width9080 \height4040 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 37.png \width9820 \height3260 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs36 \cf0 AFTER THIS:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs48 \cf0 SMART FRAMEWORK:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 38.png \width8080 \height7200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5\i\b\fs56 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 39.png \width8220 \height5900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0  {{\NeXTGraphic Pasted Graphic 40.png \width8140 \height2120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 41.png \width8660 \height5960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs34 \cf0 VAGUE QUESTIONS:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 42.png \width8740 \height3420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs44 \cf0 SMART QUESTION:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 43.png \width13560 \height3400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 44.png \width14760 \height8600 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs44 \cf0 LEAVE A for the moment:\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+>> People aren't returning back to our site after they log in for the first time.\'a0I need you to tell us how to convert first time visitors to returning visitors.\'a0>> So, given that, a pretty vague way of phrasing the project goal would be\'a0increase the number of returning visitors.\'a0But a smarter way of phrasing the goal would be,\'a0increase the number of returning visitors on a month-by-month basis\'a0by at least 15% compared to the same month during last year.\'a0It's specific and it's measurable.\'a0You know exactly what you're supposed to do,\'a0and you can imagine what kinds of rows and columns would be needed\'a0in your actual data set to assess the success of the project.\'a0But, we can make the goal even smarter.\'a0I'm going to come back to the A part of the smart goal in a second.\'a0Right now, I wanna focus on the R part.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:43\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 What does it mean to make sure a goal is Relevant?\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 4:47\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Let's go back to what I said about asking your stakeholders open ended\'a0questions to get insight into what it is they really care about.\'a0Your project manager may have opened the conversation saying,\'a0I want you to increase the number of returning visitors to our website.But, when you asked her what business problems she was trying to solve,\'a0here's what she said.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:04\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> We started this project because revenue has been declining lately, and\'a0that's very concerning, because our costs remain the same.\'a0This impacts profitability, so we need to figure out a way to increase our profits.\'a0I know that other companies have been able to increase their revenue\'a0by increasing customer loyalty.\'a0And that they did it by converting first time visitors to returning visitors.\'a0I want you to do the same for us.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 5:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 >> Through asking directed, open ended questions, you learned\'a0that what your project manager really cares about is bringing in more money.\'a0Not returning customers, per se.\'a0She was just making the assumption based on things she read.\'a0But the reasons profits were down was because customers weren't returning\'a0to the website.\'a0That's a good hypothesis, but in reality we have no idea whether the number of\'a0returning customers will be relevant to the drop in revenue.\'a0And if it turns out that the number of returning customers is not relevant\'a0to the drop in revenue, and your analysis is solely dedicated to the changing of\'a0the number of returning customers,\'a0your project manager and the rest of your stakeholders are not gonna be very happy.\'a0So, make sure your project goal is relevant.\'a0So, given what we now know from asking questions,\'a0\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs38 \cf2 \cb7 here's a statement that more accurately reflects what the stakeholder cares about.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 45.png \width13120 \height5540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\f7\b\fs34 MAKE THIS EVEN MORE SMARTER BY TIME BOUND:\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 46.png \width12800 \height5540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \cb7 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs44 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 47.png \width6080 \height2780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+How quickly you can determine what to do to the website to increase revenue\'a0depends on what data you have available.\'a0Sure, if your stakeholder's company collected every click\'a0each website visitor makes, and connects that to all kinds of demographic and\'a0previous buying history information, this project seems feasible.\'a0But what if your stakeholder's company scores very low on the checklist we\'a0heard about in course one of this specialization,\'a0that evaluates how data-ready your company is?\'a0And they don't actually collect any data from their website yet.\'a0Other than, how many times the same IP address contacts it.\'a0Then, you have a much bigger problem on your hands.\'a0Either you will need to hand the project over to another kind of analyst who\'a0\cb7 designs solutions without using data, or\'a0\cb3 you will have to discuss methods for helping your stakeholders collect\'a0data that will help you solve the business problem.\'a0These methods may take a long time to implement depending on what\'a0type of solution they want and the two month deadline might be infeasible.\'a0So, here are two new versions of the goals that meet the attainable criteria.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 7:53\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 So, here is the first one.\'a0The goal of the project is to, by the end of two months,\'a0analyze archived click-stream data\'a0to determine the website changes that will most efficiently increase revenues by 15%\'a0on a month-by-month basis compared to the same month last year.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 8:08\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Here's a different version, that might have two parts.\'a0First in 3 months, install a system that will collect and\'a0store click-stream data in a cloud-base relational database.\'a0Then, the second part could be.\'a0By the end of 2 months, after the system has been installed, this data will beanalyzed to determine the website changes that will most efficiently increase\'a0revenues by 15% on a month-by-month basis compared to the same month last year.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs24 \cf5 \cb3 8:32\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf2 Now, compare these S.M.A.R.T goals to what we started with,\'a0which was increase the number of returning visitors.\'a0Which type of goal would you prefer to put your time and money behind?\'a0And some final steps, make sure you show your first draft of the S.M.A.R.T.\'a0goals to your stakeholders, and go back and\'a0forth with them until everybody signs off on the goals.\'a0Depending on the context, you can supplement the goals with a document\'a0specifying things like other important deadlines, who will assess the project,\'a0and what types of business process changes are or are not up for grabs.\'a0If you start your project by asking your stakeholders open ended questions\'a0about the business problem they are trying to solve, and have them sign off on\'a0S.M.A.R.T. goals, you won't find yourself in the middle of a rock project.\'a0Equally important, the S.M.A.R.T. goals you set at the beginning of your project\'a0will serve as the keystone to help you center and focus your analysis plan.\'a0Which will make sure you don't get lost in analysis paralysis down line,\'a0because you aren't sure what you should be doing with your data.\'a0We will be returning to these S.M.A.R.T goals many times throughout the course.\'a0So make sure that you start practicing making a second nature to\'a0add S.M.A.R.T criteria to all of your project goals.\cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 48.png \width13620 \height4940 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 49.png \width13660 \height6600 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 50.png \width10240 \height6960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs48 \cf0 KEY TAKEAWAYS:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Now, compare these S.M.A.R.T goals to what we started with,\'a0which was increase the number of returning visitors.\'a0Which type of goal would you prefer to put your time and money behind?\'a0And some final steps, make sure you show your first draft of the S.M.A.R.T.\'a0goals to your stakeholders, and go back and\'a0forth with them until everybody signs off on the goals.\
+\
+\'a0Depending on the context, you can supplement the goals with a document\'a0specifying things like other important deadlines, who will assess the project,\'a0and what types of business process changes are or are not up for grabs.\'a0\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs36 \cf2 If you start your project by asking your stakeholders open ended questions\'a0about the business problem they are trying to solve, and have them sign off on\'a0S.M.A.R.T. goals, you won't find yourself in the middle of a rock project.\'a0\
+\
+Equally important, the S.M.A.R.T. goals you set at the beginning of your project\'a0will serve as the keystone to help you center and focus your analysis plan.\'a0Which will make sure you don't get lost in analysis paralysis down line,\'a0because you aren't sure what you should be doing with your data.\'a0We will be returning to these S.M.A.R.T goals many times throughout the course.\'a0So make sure that you start practicing making a second nature to\'a0add S.M.A.R.T criteria to all of your project goals.
+\f5\fs32 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 51.png \width24520 \height12500 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 52.png \width13900 \height8940 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 54.png \width7860 \height5800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 55.png \width14120 \height7880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 56.png \width14780 \height7760 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs32 \cf0 Make many layers and sub layers
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 57.png \width11060 \height6460 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 58.png \width12520 \height5740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 59.png \width10500 \height5580 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 60.png \width14080 \height5900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+Assign Priority:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 61.png \width14180 \height7060 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs46 \cf0 Reorder priorities:
+\f0\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 62.png \width14300 \height6220 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 63.png \width9980 \height9400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0  {{\NeXTGraphic Pasted Graphic 64.png \width10340 \height8080 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 65.png \width9840 \height7640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 66.png \width26800 \height14800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 67.png \width26480 \height11940 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 68.png \width9240 \height5400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs40 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 69.png \width13780 \height8800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs30 \cf0 Worked:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 70.png \width12120 \height8780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 71.png \width16840 \height10480 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 73.png \width21280 \height12860 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs40 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Once you know what data variables you are going to use for each category or\'a0subcategory, the next step is to assign each category or subcategory a priority\'a0based on who suggested them, how much impact you suspect they could have, and\'a0how feasible you suspect they will be to assess.Once you've assigned the priorities,\'a0I suggest you re-order each path in your pyramid according to its priority so\'a0it's easy for you to see what you need to focus on.\'a0If you do, all the highest priorities will be on the left and\'a0the issues with the lower priorities will be on the right.\'a0In the end, you'll get something that looks like this.\'a0By the way, now is a good time in the life cycle of your analysis project to ask for\'a0feedback from your team and/or stakeholders.\'a0Ideally, all the important stakeholders would agree to the plan you laid out,\'a0because not only will it determine the order in which you will do your work,\'a0it will also serve as a method for communicating and justifying yourdecisions about what to spend time on when you're working under a tight deadline.\'a0Your stakeholders might not be used to looking at SPAPs per se, but they will be\'a0grateful to have documentation on exactly what you plan to do.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 2:07\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 The final step of an SPAP is to actually implement the plan and\'a0hone in on the most important issues or\'a0independent variables that will help you solve your business problem.\'a0Your mission during this last phase in the project is to identify really big effects\'a0that will be worth investing your time and to understand more deeply.\'a0Knowing how strong the relationships between your smart metric and\'a0your independent variables are likely to be gives you a very good picture of\'a0long it will take you to reach conclusions about your business problem.\'a0If there are at least some strong effects between your smart metric and\'a0independent variables you are testing,\'a0you'll want to focus on those independent variables first.\'a0If there aren't any strong effects between your smart metric and independent\'a0variables you are testing, you will either need to go back to your stakeholders tofigure out some more variables to examine, or you will need to enlist help from team\'a0members with more statistical expertise to make more nuanced models.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 2:52\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 This step in your analysis project is where the power of visualization software\'a0for data analysis, as opposed to just data communication, becomes most apparent.\'a0In the past, analysts used statistical programs or Excel to look for\'a0strong effects.\'a0To find those effects, you would have to rearrange your data for\'a0\cb7 almost every single analysis you wanted to implement.\'a0\cb3 In stark contrast, well designed visualization programs like Tableau\'a0make strong relationships very easy to see immediately, and\'a0once you've gotten the data into the right format for your first analysis,\'a0you don't have to rearrange them ever again.\'a0Therefore, in combination with an SPAP, I find visualization programs much more\'a0efficient than statistical programs for quickly identifying\'a0which independent variables are most important for understanding smart metrics.\'a0This is especially the case in traditional business analytic situations that don't\'a0require complicated statistical or mathematic models.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 3:38\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 The visualization strategy I like to use is to make one or two charts to assess\'a0every single category specifically in layers two and three of your SPAP.\'a0Hold off on making visualizations for deeper layers for right now.\'a0Briefly describe what your charts would look like next to your variable or\'a0in the bottom layer of your pyramid so that they're easy to keep track of.\'a0I recommend restricting yourself to bar charts, scatter plots, and\'a0line charts during this phase, for reasons we'll learn about more in coming weeks.\'a0One by one, work through each of the categories in layers two andthree to see if any of the charts unearth obvious patterns.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 4:10\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 For each graph you make, ask yourself do any patterns stand out to me or\'a0catch my eye?\'a0If not, highlight or\'a0mark the category with a color that means not likely to lead to an insight,\'a0and don't go any further down the pyramid tracks beneath that category.\'a0If it looks like maybe there is some kind of relationship between your smart\'a0metric and your independent variable, mark it with a color or\'a0symbol that represents how likely you think it will be to lead to an insight.\'a0If there is definitely a relationship between your smart metric and\'a0your independent variable, mark it with a symbol that means come back to me.\'a0Whenever a part of your SPAP is marked come back to me,make a point to work your way down all of the layers of that part of the pyramid.\'a0Making graphs for each layer of subcategories until you think you have\'a0a good strong hypothesis about what's going on and\'a0why your smart metric is being impacted by these variables.\'a0It will take a while to go through all the layers of your pyramid.\'a0So the reason I suggested starting by making graphs forboth layer two and layer three of your pyramid but not deeper layers,\'a0is because hopefully it will help you avoid doing unnecessary work.\'a0If you don't see an obvious effect at these top layers,you're less likely to see them at more detailed layers.\'a0It usually is a good idea to make graphs for layer three as well as layer two,\'a0though, because looking at just the larger category in layer two may hide important\'a0effects that you can only see when you segment the data a little bit more.This is especially true when you have a lot of subcategories in layer three.\'a0That said, you can use your judgement about whether you have enough data or\'a0categories to make it worth it to go through every item in layer three or\'a0below, or\'a0whether, instead, you want to only make graphs for layer two to save time.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 5:34\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 As you go through the layers of your pyramid,\'a0make sure to incorporate what you learn into your plan.\'a0Add new hypotheses or cross out ones you know are no longer relevant.\'a0Look at what patterns emerge and refine and streamline your hypothesis.\'a0For example, if you found two possible categories of factors that likely\'a0have very strong relationships with your S.M.A.R.T.\'a0Metric, it will likely be important to examine how these factors interact and\'a0you'll likely want to add that to your analysis plan.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 5:56\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 Remember to continue to get feedback throughout the process as well,\'a0to make sure what you are working on makes sense and is useful.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 6:03\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 Eventually by the end of this process, you will whittle you way down to the factors\'a0that seem to have the strongest relationship with your SMART Metric.\'a0By the time you have worked through the entire SPAP,\'a0you will either have a strong hypothesis about what business changes could be\'a0implemented to achieve your smart goal, or you will have a much\'a0clearer idea of what other resources you need to finish the project.\'a0Further, just by virtue of going through the process, you will have a way to\'a0document what you've done for your team and stakeholders, and have a mechanism for\'a0splitting work up with other members of your team if there's more work to do.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 6:31\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 All of the visualizations you will make for\'a0your SPAP will be designed to help you analyze the data.\'a0Once you've completed your analysis and know what data is most important for\'a0achieving your SMART goal,\'a0you will then start the transition from making visualizations that analyze data\'a0to making visualizations that communicate the implications of your data.\'a0We will learn how to make both of these types of visualizations in the next few\'a0weeks of this course.
+\fs28 \cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 75.png \width17780 \height9880 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs98 \cf0 WEEK 2:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 76.png \width13820 \height8740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs40 \cf2 \cb3 \expnd0\expndtw0\kerning0
+The reason that data analysts have sometimes been called data scientists\'a0is that our goal as analysts is to arrange the insights of our data in such a way\'a0that everybody who sees them is able to clearly understand their implications, or\'a0their truths and how to act on them.\'a0According to many philosophers like John Stuart Mill here,\'a0that's the realm of science.\'a0Further, in a practical world, one of the main jobs data analysts and\'a0data scientists have is to automate business processes and\'a0business insights using predictive computer algorithms.\'a0According to the computer scientist Don Knuth,\'a0who I quoted here, that's the realm of science too.\'a0So by both of these definitions, no matter what your formal job title is,\'a0your goal should be to be a data scientist, not just a data analyst.\'a0The thing is, we can't automate business processes effectively unless we know what\'a0features of the world are important to incorporate into the predictive algorithms\'a0we are using to automate those processes.\'a0That's where art comes in.\'a0\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs54 \cf2 The art of data science is figuring out how to arrange the things\'a0we learn about our data into something that has meaning.\'a0\cb7 In other words, to arrange it into a story that tells scientific truths that are so\'a0\cb3 well understood that they could at least in theory be automated.
+\f1\i0\b0\fs40 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 1:09\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 Practically, that process means looking at your data in a whole bunch of different\'a0ways until you figure out the order your data's insights should be organized into\'a0in order for you to be able to,\'a0in John Stuart Mill's words, explain the general order of the universe.\'a0Or in Don Knuth's words, know what you should put in your predictive model\'a0that you are going to implement in some kind of programming language.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 1:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs40 \cf2 That's what visualizing data does for you.\'a0It helps you figure out what your data mean efficiently.\'a0And in the process of doing so helps you narrow in on what factors you should take\'a0into consideration in your statistical models of predictive algorithms.
+\f1\i0\b0 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs36 \cf5 \cb3 1:43\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs40 \cf2 Over the next two weeks we're going to learn how to use the program Tableau to\'a0implement this type of visualization.
+\fs28 \cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs82 \cf0 DATA SET:\
+\
+
+\fs76 Meet your salary Data:
+\fs82 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs42 \cf2 \cb3 \expnd0\expndtw0\kerning0
+I hope you are excited to start learning Tablo.\'a0Before we jump in I want to tell you a little bit about the dataset\'a0that we will be analyzing the videos with this course.\'a0When a U.S. company wants to hire someone from outside of the United States for\'a0a special tier or technical position,\'a0they have to file an application with the United States government to get a visa for\'a0the applicant so that the applicant is allowed to stay in the country.\'a0Typically, the company will either file a green card application,\'a0
+\f2\i\b called the perm application, or a labor condition application, called an LCA.
+\f1\i0\b0 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 0:30\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs42 \cf2 LCAs include other specialty working visas, like H-1B visas.
+\f1\i0\b0 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 0:35\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 One of the primary reasons these applications need to be filed,\'a0is of course, so that the U.S. government can keep track of who is entering and\'a0leaving the country for work related reasons
+\f4\i .
+\f2\b\fs48 But another reason the applications need to be filed, is that the government wants\'a0to make sure that immigrants are neither being taken advantage of, or\'a0\cb7 causing adverse effects for US workers.\cb3 Therefore, each time a company files an application,\'a0they have to state how much they are planning on paying the employee.\'a0
+\f1\i0\b0\fs42 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs46 \cf2  
+\f3\b They also have to state the average amount an employee with similar skills and\'a0background typically gets paid for the same position.\'a0A figure called the prevailing wage.
+\f1\b0\fs42 \'a0\
+\
+In theory, but immigration blogs suggest not in reality.\'a0Employers are not allowed to pay foreign employees a dramatically different wage\'a0than the prevailing wage for that position and education level.\'a0This is meant to ensure equity for U.S. and non U.S. workers.\'a0\
+\
+
+\f2\i\b\fs48 Interestingly for us, all work visa applications are publicly available and\'a0downloadable at the Office of Foreign Labor Certification website.
+\fs44 \'a0That means if you have the patience to put all the data together.\'a0And luckily for us people on our team were patient enough.\'a0It would be possible to look up information about what types of salaries\'a0people in a particular profession are making.
+\f1\i0\b0\fs42 \'a0
+\f2\i\b\fs46 It would also be possible to look up how these wages vary across\'a0different parts of the country.\'a0Since many of you taking the class might be considering making a career move into\'a0a data-related field, I thought it might be interesting to use this publicly\'a0available data to explore what types of salaries you might encounter.
+\f1\i0\b0\fs42 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 1:52\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs42 \cf2 So what does this foreign labor data set that we are going to use, look like?\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 77.png \width10440 \height7060 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 78.png \width10380 \height6420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\i\b\fs42 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+
+\f1\i0\b0 \'a0Well first of all I want to tell you that an even more complete data set has been\'a0assembled and made searchable at this jobs and tech website.\'a0For this course we've put together a sub set of the 2011 to 2015 data available on\'a0that website, and included the following fields.\'a0\
+\
+Of course, offered yearly wage for each application.\'a0Prevailing yearly wage for the job in that application.\'a0Date when the decision on the application was made,\'a0company submitting the application, city in which the job is located.Nationality of the job application and visa type being applied for.\'a0To make life easier on us, we also included a field that did a search of\'a0the job titles and classified them into a general job sub-category.\'a0For the most recent data from 2015, we were also able to pull,\'a0number of years of experience required to apply for the position, education level\'a0required to apply for the position, and date when the application was received.\'a0It's worth noting that there were a lot of incorrect entries in the data set.\'a0Some of the applications were for part time work, while others were for\'a0full time work.\'a0And some of the wages were originally entered as hourly, bi-weekly, or monthly,instead of yearly.\'a0So the data were pretty messy when we pulled them off the Office of\'a0Foreign Labor Certification website.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 3:01\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 You should also know that a lot of data was missing, and\'a0therefore remains missing in the dataset we will be using.\'a0Further, none of these numbers reflect bonuses or\'a0raises that occurred after the original application was filed.\'a0All of these things should be taking into consideration as we try to interpret what\'a0the data mean.\'a0You and the data have now officially been introduced.\'a0Let's find out what we can uncover about U.S. Text Salaries.\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs54 \cf2 MEET YOUR DOGNITION DATA:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs42 \cf2 \
+We are really fortunate in the class to be able to work with a real business data\'a0set from a real business.\'a0That business is called Dognition.\'a0And today we have Elliot Cohen,\'a0producer at Dognition coming in to tell us about the data set he donated to us.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 0:19\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 Hi Elliot.\'a0>> Hey.\'a0>> Thanks for coming in.\'a0>> It's great to meet you.\'a0>> Who's this?\'a0>> This is Sizu.>> Hi, Sizu.\'a0Thanks so much for coming in.\'a0>> Oh, it's our pleasure.\'a0>> Both of you have a seat.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 0:29\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 Great, well thanks again.\'a0So could you tell us a little bit about Dognition and what role you play there?\'a0>> Sure, Dognition is a way for dog owners and\'a0dog lovers all over the world to learn more about their dog.\'a0We have taken laboratory games that are done in dog labs and\'a0\cb7 dog cognition labs all over the country and all over the world.\'a0\cb3 And we have basically broken them down into their components and\'a0recreated them using household objects that anyone can\'a0use finding whatever they have in their house at home.\'a0And then we aggregate all this data.\'a0We have over 30,000 people who are playing Dognition games now.\'a0And we look at it as a group.\'a0And now we've recently published our first paper,\'a0which says that our data is as good as laboratory data.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 1:11\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 In terms of what the users, the dog owners who play Dognition get.\'a0You really get to learn a lot more about your dog that you wouldn't\'a0necessarily know.\'a0I know a lot of people come in and they think, oh gosh, I know my dog's smart or\'a0I know my dog's dumb.\'a0But even Dr.\'a0Hare, who designed the games, learned a lot more about his dog, Tasmania.\'a0So, for example, Tasmania he expected to have a very active memory,\'a0and be able to recall things very easily.\'a0But it turns out she doesn't really rely on her memory that much.\'a0She relies a lot on him.\'a0So when he's telling her sit, and then she walks away,\'a0it's not cuz she's disregarding what he's saying.\'a0She actually just can't remember what he said.\'a0So this is an example of something you'll gain through\'a0learning the proper skills that your dog relies on.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 1:52\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 So the Dognition games themselves are broken down into five dimensions of\'a0canine intelligence.\'a0The dimensions are empathy, communication, cunning, memory and reasoning.\'a0And then across these five dimensions, we have 20 games, or really 10 games and\'a010 warm ups, which then contribute to those dimensional scores.\'a0Which will determine not if your dog uses memory or doesn't but\'a0what skills within memory your dog relies on.\'a0And then, from these, your dog will be placed into one of nine profiles.\'a0And these profiles are a combination of different traits.\'a0What we found, which is very interesting to begin with, is your breed doesn't\'a0determine very much about what profile your dog will end up being.\'a0It's all about the individual way your dog is solving problems.\'a0>> So what does it actually look like when you log in to the website?\'a0>> So to log in to Dognition you just go to the Login button and\'a0wait for it to load.\'a0And then you log in with whatever your username and password is.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 2:54\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 And then what you see right here, this is what a completed dog sees.\'a0So right in your homepage, it shows you all the dimensions you've completed,\'a0it shows you your next monthly game over here.\'a0Here's your activities, and here's your survey corner,\'a0which is like 150 additional questions, which people really like to answer,\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 3:11\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 because people like to answer questions about their dog.\'a0This is where the report would be, so there are 15 pages of analysis, and\'a0then we go back to the games.\'a0This is a completed dog.\'a0And all the completed dimensions and all the completed results.\'a0So if we looked at an incomplete dog, you can see this is Kyle up here on the top.\'a0So the way we get here, we go from the homepage.\'a0Right here, you see it says up next play the games, and here we are.\'a0This is the game that's next.\'a0It shows the completed games on the side.\'a0Cunning is the game he's up to.\'a0And on the top, it says play, so you click play and you go right into the games.\'a0And up here ahead, you see the games you haven't yet\'a0unlocked to play cuz you need to play them in the order and\'a0it reminds you need to complete them, a previous dimension in order to play.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 4:05\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 >> So what kind of subscription models do you have?\'a0>> Dognition offers three types of subscriptions as ways to play\'a0the Dognition games.\'a0We have the Core Dognition Assessment.\'a0And this is ten games and ten tests or\'a0warm ups that contribute to your dog's Dognition profile,\'a0which is one of those nine things that ends up that you dog is afterwords.\'a0On top of this we have the Dognition yearly and monthly subscriptions.\'a0And these are exciting additional things that you can do with your\'a0dog after you complete the assessment, which really are two things.\'a0You have 12 additional games over the course of a year,\'a0as well as 12 additional activities that are created by experts or trainers.\'a0And these games and\'a0activities unlock on a monthly basis from when you sign up, one per month.\'a0>> Okay, so if I understand correctly,\'a0each customer has the opportunity to complete 20 tests in the first month, and\'a0they do it in the same order each time, one by one as you make them available.\'a0Is that right?\'a0>> The Dognition games were designed to go in a particular order and starting\'a0with empathy, going to communication, cunning, and memory and reasoning.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 5:11\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 The reason for this was twofold.\'a0One, the empathy games are actually our simplest games.\'a0They don't require anything other than you and your dog, and for\'a0the eye contact game, you require treats.\'a0But there's no training that you need to do in terms of getting your dog used to\'a0doing these.\'a0It's just you and your dog hanging out.\'a0This is helpful, because you don't need to worry about,\'a0if your dog is over-excited, it'll be a calming experience and\'a0that will really get your dog in the mood to play the games going forward.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 5:42\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 After that, the other thing that happens is, the games slowly get more and\'a0more complicated so we thought it'd be better to ramp it up.\'a0>> Did you ever try making the tests available in a different order?\'a0>> About six months after launch for Dognition, we were looking closely at how\'a0our product was performing in terms of completion rates.\'a0And we realized, it wasn't as much that we realized,\'a0we weren't happy with how far people were progressing.\'a0There was a very large drop off in the beginning and\'a0not as many people as we wanted were getting all the way through to the end.\'a0To try to address this we,\'a0our hypothesis was that people weren't enjoying the empathy dimension as much.\'a0Because while it was very easy and it was easy to get people into the games,it wasn't exactly exciting.\'a0And we knew this because we designed and\'a0implemented an additional enjoyment/surprise survey.\'a0So using information we got from that, we developed an alternate hypothesis,\'a0which was instead of leading with empathy, we would lead with the memory dimension.\'a0Which was scored as more enjoyable and\'a0very surprising in terms of the expectation versus what happened.\'a0The drawback to this, which we realized after,\'a0while the overall completion rate and advancement didn't change.\'a0It did change how far people got.\'a0Some more people got through the first dimension, but\'a0that didn't mean they got further.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 6:53\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 And the drawback of the memory dimension was that it's a very\'a0technical dimension in terms of what the instructions are asking you to do.\'a0And if the dog isn't using a strategy that results in them getting a treat,\'a0then they're not going to be getting any treats at all.\'a0And that gets really frustrating both the owners and the dogs.\'a0So that's some insight into one of our earlier tests.\'a0>> So now here's the million dollar question, Elliot.\'a0What business problem does Dogniton have that you think we might be able to help\'a0you with?\'a0>> Dognition as a product, and a company,\'a0is really broken into two components at the most basic.\'a0We have what we call the Brochure,\'a0which is the outside non-logged in version of what you see, which is our website.\'a0You go through, you have the homepage, how it works, and\'a0then 1,000 other pages trying to give you more information if you're interested.\'a0And then we have the actual product itself, which is after you log in,\'a0the issues to do with playing the games or interacting with the trainers or\'a0the experts or any number of things in there.\'a0So that gives us two very distinct areas of development that we can focus on.\'a0At Dognition we have an interesting problem\'a0where we actually care a lot about what our customers do after they purchase.\'a0We don't, once you give us your money,\'a0that's fantastic, but we actually want you to do a lot with Dognition as a product.\'a0And this comes into, we really want you to finish.\'a0If you don't finish then we only get a tiny amount of your data.\'a0And the overall goal of Dognition is to publish papers and learn\'a0more about your dog and your contributions are helpful in keeping us running.\'a0But, at the end of the day,\'a0if we don't have your data than we don't have anything.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 8:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 So, one of the main things we're looking is ways to increase,\'a0in some respects, their completion rate, but really just get\'a0people further along in their Dognition experience and through the games.We can do a lot of partial analysis where we look at\'a0just the people who have completed the first section of the games, or\'a0just the PQ, or just anything like that.\'a0But really, what we're looking for is this huge comparison, we can look for\'a0your breed, or any number of things across all of the games.\'a0So, anything that we can find about some insight to push users and\'a0their dogs to complete a bit more, would be super helpful from our perspective.\'a0>> So, do you have any tips for our class as we tackle this business problem?\'a0>> I actually do have a tip, in terms of doing the data analysis.\'a0The most important thing that we found is that you have to go into every\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 9:14\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 test with a question.\'a0You need have a hypothesis and\'a0you need to know exactly what you are doing to test that.\'a0Cuz if you're just going in looking,\'a0either you're gonna find things that don't matter, which is useless.\'a0Or you're not gonna find anything which is equally useless.\'a0So find a testable hypothesis before you go in is the only really\'a0important thing I'd say.\'a0>> Great, so do you think you'd be willingly to show us an example of one\'a0of your tests?\'a0>> Yeah, sure.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 9:36\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 So I'm gonna show you guys the memory versus pointing game.\'a0I think this is a great example of how Dognition is trying to see\'a0what strategy your dog uses, not that there's a right or a wrong answer.\'a0This is a pretty far into the game.\'a0It's near the end of the memory dimension.\'a0And what this will do is I'll put down some cups and\'a0I'll hide a piece of food under one of the cups and then I will stand up and\'a0point to the cup where I didn't hide the treat.\'a0And this will directly point my information that the dog is learning from\'a0my actions versus where it knows the treat is and where it remembers that it is.\'a0So, let's see what happens.\'a0So, what do is we put the two cups down.\'a0The dog is across.\'a0Sizu, show the treat.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 10:16\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 Put it under a cup and then, get the treat.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 10:25\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 So the side that she goes to first is what she gets, so\'a0she knew that that's where the treat was, even though I pointed to the other side.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 10:34\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 >> What made Dognition excited to share their data with us and\'a0to be part of this course?\'a0>> One of the things that Dognition's big on is education.\'a0We want to share information about dogs and if we have enough data and\'a0we have enough experience we can share some data or\'a0info about how to make data driven decisions.\'a0Then we ended up being very happy to help.\'a0The one thing that was really important, from our perspective, when we're sharing\'a0our data is that we take care of ourselves and we take care of our users.\'a0So all of the data that we shared was anonymized.\'a0There's no reference to individual users and\'a0there's never any references to addresses or emails, or a name, anything\'a0at all that would identify an individual has been scrubbed from the data.\'a0There's no tracing back to anyone.\'a0>> Now that you've heard about the business problem we have to\'a0solve together.\'a0Go to the course website to find out some more details about the specific fields we\'a0have and the data set that Elliot and Dognition so kindly donated.\'a0In the meantime, I suggest you go check out the Dognition website.\'a0It's really a cool company, and\'a0I think you'll really get excited about solving their business problems.\cf4 \cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs56 \cf4 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs38 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs54 \cf0 OUR ANALYSIS PLAN:\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\i\b0\fs42 \cf2 \cb3 \expnd0\expndtw0\kerning0
+As we learned last week, we'll never jump into an analysis without an analysis plan.\'a0I provided the first draft of the analysis plans we will follow in the course for\'a0both of our data sets on the course website.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs38 \cf5 \cb3 0:13\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs42 \cf2 I made the analysis plans using brain-mapping software that you can get\'a0for free on the web.\'a0I called them first drafts because of course, as we go through our analysis and\'a0gain new insights, we will add new hypotheses or issues to address.\'a0And take away old ones that we no longer think are relevant or\'a0don't know how to answer.\'a0Are there any issues or questions that you think I missed?\'a0\cb7 If so, go ahead and add them to your version of the analysis plans.\'a0\cb3 By the end of the next few weeks,\'a0you will feel confident that you know how to address any question you come up with.\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 79.png \width26200 \height6700 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\i\fs42 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\i0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 80.png \width26520 \height7660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs54 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+HYPOTHESIS TESTING EXAMPLE:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 81.png \width19120 \height12540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 83.png \width19280 \height12800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 84.png \width18140 \height12280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 82.png \width24340 \height3640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs36 \cf0 TABLUE INTRO:\
+
+\fs52 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs44 \cf2 \cb3 \expnd0\expndtw0\kerning0
+So now we have our data set.\'a0We have a plan for how we're gonna analyze it and answer our questions and\'a0we've downloaded Tableau.\'a0We're ready to make our first graph.\'a0Now to do that we should all be using the same data set.\'a0So please go to the course website and download the data set called salary data.\'a0Be sure to save it somewhere on your computer when you'll be able to\'a0find it later.\'a0Now I'm gonna be going through these videos as if you're doing these exercises\'a0with me, at the same time, but feel free to just watch the videos and\'a0do the exercises on your own later.\'a0Ready to get started?\'a0Great, so go ahead and open your copy of Tableau and\'a0when you open it up it's gonna look something like this.\'a0Now when you're using Tableau Desktop,\'a0you're gonna see this section here on the left.\'a0You can see that it connects to different servers, or databases.\'a0You can see MySQL, Oracle, and if you click on more servers you can see the long\'a0list of different databases that Tableau can connect to.\'a0Now if you're using Tableau Public, you're not gonna be able to see these,\'a0because Tableau Public cannot connect to databases.\'a0But since Tableau so kindly generously, donated keys so\'a0that all of our students in this course can use Tableau Desktop,\'a0you all should have access to these databases as well.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 1:17\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 So today, we're not gonna connect to a database,\'a0we're going to connect to an Excel file.\'a0So go up here to connect to a file, and click on Excel.\'a0Navigate to where ever you saved the data set and click on salary data, say Open.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 1:38\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Sometimes, especially if you have a Mac,\'a0when you connect the first time this can take a little bit of time.\'a0Our data set is not the biggest data set in the world, but it is quite big for\'a0Excel standards.\'a0So this can take many seconds, tens of seconds,\'a0or in some cases, with slower computers, even as long as a minute.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 1:57\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Now when the data has loaded,\'a0you're gonna come to a screen that looks something like this.Down here, are all the names that Tableau has automatically interpreted from\'a0the dataset.\'a0So each one of these names is in the header column or\'a0the header row of the Excel file.\'a0And you can see that it automatically classified the name as well\'a0as the type of variable.\'a0So this,\'a0these little icons here tell you the type of variable that Tableau thinks it is.\'a0Now usually Tableau does a pretty good job, but\'a0it doesn't get it perfect every time.\'a0So for example here you can see that case received date it thinks is a string,\'a0that's what that Abc means.\'a0But you can click on this and change the variable so that it's correct, so\'a0we can change this to date, for example.\'a0Do the same thing with decision date and\'a0here's another example of where it didn't get it quite right.Prevailing wage submitted to be a number and it thinks it's a string.\'a0So we can change it to number, decimal.\'a0And you can do this for every single variable in your data set.\'a0Now there's another place to do this on the next screen.\'a0So we'll go ahead with this for now and then I'll show you how to do it in\'a0a different way when we get to the next screen.\'a0When you think you have you variables named and organized the way you want them,\'a0go ahead and click Update Now.\'a0And you'll start to see the data wheel cuz it's gonna take quite a bit of time to\'a0load the data especially the first time.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 3:17\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Now, as this loads, I wanna prepare you for\'a0what you're gonna see on the next screen.\'a0Tableau is a very powerful program and I really put a lot of effort into trying to\'a0make the user experience as pleasant as possible.\'a0As a consequence, it has a lot of different capabilities andthere are usually two to three different ways to do just about everything.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 3:36\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Now unfortunately, or fortunately depending on how you see it, there isn't\'a0gonna be time for me to show you how to do every single one of those things.\'a0In fact, I would argue it's almost impossible for\'a0anyone to know how to do them all.\'a0And that's why people go to Tableau conferences every year,\'a0to keep up to date and to learn what all the new bells and whistles are.\'a0My strategy is, to go through exercises that I think will show you the most\'a0important things you need to know as a business analyst.\'a0And as we go through them, I'm gonna show you as many tips and\'a0tricks and options as I can.\'a0But I'd like to encourage you to explore the data and\'a0explore Tableau on your own, as well.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 4:12\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 The best way to learn all the ins and outs and\'a0really become comfortable with the program is discover these things on your own.
+\f2\i\b\fs48 \'a0Plus, this will be a great time to practice that curiosity andfearlessness that's great to have as a data analyst.\'a0Whenever you don't know how to do something, practice looking it up\'a0on your own and proving to yourself that you can figure it out.\'a0Because that fearlessness will be a great thing to have as a data analyst,\'a0and this is a great time to practice it.\'a0This is what you see when you open up the work space in Tableau.\'a0May orient you to see the screen.\'a0Over here in the left is where all of your variables are andTableau picks them up according to measures and dimensions.\'a0Measures are basically continuous variables and\'a0\cb7 dimensions are your discreet or categorical variables
+\f1\i0\b0\fs44 .\'a0\cb3 Now remember I told you in the tips at the very beginning of the course,\'a0sometimes there are variables that can be either continuous or discreet.\'a0In this case either a measure or a dimension and\'a0you need to choose which one you wanna define it as depending on your analysis.\'a0So to change that it's actually very easy in Tableau.\'a0Another time you might wanna do this is if Tableau incorrectly assigns the variable\'a0as either a dimension or measure.\'a0So there actually are two examples of that here.\'a0Two of the main things we're gonna be looking at in our data set are prevailing\'a0wage per year and paid wage per year.\'a0These actually are both continuous meaning they're both measures, but\'a0Tableau thinks they're dimensions.\'a0So to change that, very simple like I said you just click and drag it down.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 5:46\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Another way you can do that is you can click on this drop-down menu and\'a0you can say Convert to Measure, and that will do the same thing.\'a0Now I wanna show you a couple other things you can do with that drop-down.\'a0You can see that this is where you would Rename the variable, or Duplicate it.\'a0But this is also where you would change the data type.\'a0Remember, I told you in the last screen that\'a0there'd be a place to do it here in the work space.\'a0This variable's experience required or the number of months of experience required.\'a0Tableau thinks that that's a string but it's actually a number.\'a0So here, I can change that to number,\'a0just like I did when we are bringing in the data.\'a0One more thing I wanna show you over here in the variable column is this\'a0very little icon, see this little magnifying glass.\'a0This is a way that you can search all of your variables when you have a ton of\'a0different columns and it can be hard to navigate.\'a0So you can just type something in and it will go directly to it.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 6:45\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Now up here is a toolbar.\'a0There are lot of neat things up here that I encourage you to explore.\'a0The main ones I'm gonna point out now are this very important one.\'a0This is the Undo button.\'a0You're gonna use this a lot, imagine.\'a0This is another important one.\'a0It's a little icon that has a graph with an X on it.\'a0That clears the sheet, so it completely clears the workspace and\'a0up here is the larger toolbar or ribbon.\'a0And there are a lot of interesting things up here too.\'a0The main ones we're gonna focus on are the analysis one.\'a0We'll come to this later, but note right now that you see aggregate measures here.\'a0We're gonna be using that a lot and also the format menu.\'a0Now this is one of the things that's very redundant or\'a0it's another way of doing things, almost everything on this list,\'a0you can do in the work space just by right-clicking.\'a0That's good to know that this is here.\'a0Now, down here in the work space which is the sole area here,\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 7:44\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\i\b\fs56 \cf2 these things over here are called Cards.
+\f1\i0\b0\fs44 \'a0There's a Marks card, a Filter card, and a Pages card.\'a0These rows here are called Shelves.\'a0This one is the Rows shelf, and this is actually where you're going to tell\'a0Tableau literally what to do with the rows of your data.\'a0How you're gonna aggregate over them.\'a0And there's also a Columns shelf, and this is where you're gonna show Tableau,\'a0how to break up your data, and what categories to put it in.\'a0This is the show me card over here, and\'a0this gives you all the different possible options, all the different ways that\'a0you could represent the data that you have in your work space.\'a0It will automatically tell you the types of charts that are appropriate for\'a0the data you have.\'a0So when they're grayed out, you can't use them, it actually won't allow you to.\'a0So it wants to make sure that you will only use best practices.\'a0But when it's not grayed out, and it will let you make [INAUDIBLE],\'a0we'll show you more about this before, or show you more about this later.\'a0And our first question,\'a0is how much are we likely to make in different data related jobs?\'a0For this question, our dependent variable, or the rows of data that we're\'a0most interested in that we want to aggregate over, is Paid Wage Per Year.\'a0Our Independent variable is Job Title Subgroup.\'a0Remember, I told you that our course assistant was kind enough\'a0to go through all the titles of the different job applications and\'a0put them into subgroups that we might be interested in.\'a0So luckily for us, that part of the analysis is done already.\'a0So now that we know our dependent independent variable,\'a0we are ready to make the first graph.\'a0And I want you to take a deep breath, and don't blink,\'a0because if you do you might miss this.\'a0Now, in order to get paid wage per year, over into the rows shelf,\'a0you can either double click it, or drag it.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 85.png \width15060 \height9620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 86.png \width13480 \height6680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs44 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 9:25\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 Then you put a job title subgroup.\'a0Again, into the column shelf, either drag it or double click it.\'a0Boom, you have your first graph.\'a0It really was that simple and that quick, much quicker than Excel.\'a0Now the first thing I want to orient you to is this access here.\'a0Now if you look carefully, you will see that it says\'a0that the paid wage per year are some very high numbers, in the billions in fact.\'a0Unfortunately, we wouldn't make billions of dollars in any of these\'a0data related jobs.\'a0So what is happening here?\'a0So to show you that we need to go up to the rows shelf and the columns shelf and\'a0I also wanna point out to you that this blue and\'a0green little rectangle looking like things,
+\f2\i\b\fs52  what Tableau calls pills
+\f1\i0\b0\fs44 .\'a0
+\f2\i\b\fs52 The green ones are measures and the blue ones are dimensions.\'a0So it's a good way to keep track of whether Tableau is thinking your variable\'a0is either dimension or measure.\'a0Now in the rows column, you'll see that it says SUM and\'a0then it opens parenthesis Paid Wage Per Year.
+\f1\i0\b0\fs44 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs40 \cf5 \cb3 10:32\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 So, remember, when we dragged this variable onto the shelf,\'a0we're telling Tableau we want you to look at these rows of data and\'a0we want you to break them up according to different job title sub groups.\'a0But we have to tell Tableau what we want it to do with all the rows within one\'a0of those different subgroups.\'a0And right now,\'a0it automatically thought we wanted to add them together or some of them.\'a0In reality, we wanted to know what the average was, or\'a0something like the average.\'a0So to change that, we click on this drop-down and you can go down here, and\'a0you see that it says it's treating Measure as a Sum, and it has a check next to Sum.\'a0If we wanna change it to an average or a median,\'a0we would simply click on either average or median.\'a0And my preference is always median,\'a0especially if you don't know what the distribution of your data are.\'a0So let's choose median.\'a0Now if you look at the axis again,\'a0now you see that it's in the tens of thousands, which is much more accurate and\'a0represents what we would truly make in one of these jobs.\'a0Congratulations, you've now made your first graph in Tableau
+\fs28 .\cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs58 \cf0 FORMATTING YOUR GRAPH:\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Hi, guys.\'a0Before we move on to our next data question,\'a0I wanted to show you a couple ways you can format your graph, in case you wanted to\'a0start using Tableau immediately for your own business applications.\'a0To do that, let's go ahead and\'a0make the exact same graph we made last time for practice.\'a0So, go back to Tableau.\'a0Put paid wage per year in the rows,\'a0I'm going to double click it to do that, and put job title subgroup into columns.\'a0\cb7 I'll double click that as well.\'a0\cb3 Again, it's adding over the rows instead of taking the median, so\'a0we're going to change the aggregation to median.\'a0So this should be exactly what we had before.\'a0Now the first thing I want to show you is that you might not want these\'a0different job title subcategories to be in the exact same order that they are now.\'a0One quick way to change that is to hover over this axis, and\'a0you'll see this teenie little icon here, looks like a little graph with an arrow.\'a0That's the quick sort button.\'a0If you click it once, it will organize your bars so\'a0that the bar with the highest value goes first.\'a0If you click it twice, it will organize it so\'a0that the bar with the highest value goes last.\'a0If you click it three times,\'a0it will go to the original order that you had directly from the worksheet.\'a0Now, you might want to change the orientation of these bars to make it\'a0easier to read these labels.\'a0So, it's a vertical bar chart now, but\'a0perhaps you want to make it into a horizontal bar chart.\'a0That's actually very easy to do.\'a0I'll show it to you this time by going up to this little button,\'a0up here on the tool bar, it looks kind of like an upside-down L.\'a0You'll see it says, Swap.\'a0If you press this, it will instantaneously make it into a horizontal chart.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 1:52\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Now, the next thing you might want to do is you might want to make the text\'a0a little bit bigger, cause this is a little small.\'a0So you can right click on the axis, and click format.\'a0Now the other way to do this, like I alluded to before,\'a0is you could go up to this format menu and choose whatever you want there.\'a0You can change the font, or the size, let's make it 12.\'a0We can do that for any of these as well, and let's make it 12.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 2:24\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 And as you can see here,\'a0sometimes when you make it bigger it might make it harder to see everything at once.\'a0So if you click on everything that's in this\'a0particular box it will give you the option if you hover over it.\'a0Sometimes it can be hard to see, but this tiny little arrow that goes in both\'a0directions, if you click that you can move and\'a0change the size of everything that's in this axis.\'a0Let's go ahead and change the job title subgroup formatting as well.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 2:59\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Now another thing I want to show you is that you can change the color by clicking\'a0on the color button within the Marks card, so we can make it red.\'a0You can also change the size of the bars using the slider.\'a0This is the size button on the Marks card.\'a0So we can make them smaller, which will make more white space, or larger so\'a0there's hardly any white space, say to something like that.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 3:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 And you can either add labels by clicking on the Label button, show marked labels or\'a0not, as you like.\'a0Now, another thing I wanna show you is that you might notice\'a0here that there is no title on the entire chart.\'a0That's because the way Tableau works,\'a0it makes the title whatever the title of your worksheet is.\'a0If you want to change that, you can right click, and if you go up to the top\'a0of the menu, it's not at the very top but right underneath it,\'a0you'll see that there's an option for Title, Caption, and Summary.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 3:59\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Let's go ahead and click Title.\'a0Now you'll see that there's a title bar here or\'a0a title shelf, and if you double-click that, you can change what your title is.\'a0You can see right now,\'a0it's called Sheet 1, cuz that's what our worksheet is called.\'a0We can change that title.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 4:22\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Now you won't see the title directly on the worksheet,\'a0you'll only see it when you export it.\'a0So we'll see that in just a second.\'a0Now we can also add a caption, if you're interested.\'a0In case you wanna be able to give some extra details to your audience.\'a0So we might wanna say, again double click this,\'a0we might wanna say something like\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 4:55\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 your data source.\'a0And now we have a chart that we might be happy with.\'a0So you can play around with these different options,\'a0there are lots of different things you can do.\'a0But let's say that this is exactly what you want your chart to look like.\'a0I'm gonna show you two different ways you can export this to be able to show it to\'a0other people.\'a0One way to do that is to go to Worksheet and click Export.\'a0You can see one of the options here is Image.\'a0Click on Image, it will give you a couple different options.\'a0Now here is where you can see the option to either include the title on your image,\'a0include the caption, or if you have legends it will also give you\'a0options about where you can put the legend.\'a0So if you want the caption and\'a0the title to be shown on your image when you export it, make sure you click these,\'a0as you can see you can un-click them or click them so go ahead and press save.\'a0Navigate to anywhere where you will know it will be,\'a0give it a title, and click save.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 6:03\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Now one other way you can do this is a little counter intuitive,\'a0and that's to save it as a pdf.\'a0So if you go to file, you're actually gonna go to print this time,\'a0even though you're saving it.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 6:14\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Sometimes it can take a little time to come up.\'a0And make sure that down here in this drop down, you're saving it as a PDF.\'a0So here again, it will have defaults about where it's gonna save it to,\'a0go ahead and press print.\'a0It will have saved it to wherever your defaults are.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs32 \cf5 \cb3 6:32\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs36 \cf2 Great job so far.\'a0You now know how to open data in Tableau, you have a sense of how long it can take\'a0to open large data sets, you know how to make graphs,\'a0you know how to format them, and you know how to export them.\'a0You're well on your way to becoming a Tableau expert.\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3\b\fs44 \cf2 DIGGING DEEPER USING ROWS AND COLUMNS SHELVES:\
+\
+\
+
+\f1\b0\fs48 In the last video,\'a0\cb7 we got an idea for how much you might make in different data related fields.\cb3 Especially for those of you who live outside of the US, our next question\'a0is whether those salaries might change depending on the visa you apply for.\'a0It turns out that green cards cost quite a bit more to sponsor than visas.\'a0
+\f2\i\b\fs52 So you might first check hypothesize that companies will sponsors less green cards\'a0than they will sponsor visas.
+\f4\b0 \'a0
+\f2\b On the other hand, because the green cards cost so much more,\'a0companies might have a higher bar for the people they sponsor with green cards.
+\f4\b0 T
+\f2\b herefore, they might also work harder to try to recruit those people.\'a0So it seems possible that the salaries for people who are sponsored with green cards\'a0might be higher in our data set than those who are sponsored with H1B visas
+\f4\b0 .
+\f1\i0\fs48 \cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 0:48\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs60 \cf2 Let's test those hypotheses in this video,\'a0
+\fs48 and in the process, learn what happens when you put different variables, or\'a0more than one variable, in either the Column shelf or the Rows shelf.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 1:00\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 87.png \width17200 \height15480 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs44 \cf5 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Let's begin by making the same graph we did last time one last time.\'a0And this time I'm gonna give you one extra tip since we've already learned how to\'a0change the aggregation when a variable's on the rows shelf.\'a0When you have a variable over her in the variables cards,\'a0you can click on the drop down and go to Default Properties.\'a0Here is where you can change the default aggregation.\'a0So if you go to Aggregation,\'a0you can see that the default aggregation right now is Sum.\'a0We can make it Median.\'a0So now, any time you bring Paid Wage Per Year to the Rows column,\'a0it will automatically be Median, which will make our life a little easier.\'a0Let's go ahead and put it on the Rows column, you see it's Median.\'a0Let's put, Job Title Subgroup in Columns, and\'a0let's order it using the quick order button.\'a0So this is basically the same chart we had last time.\'a0I'm gonna show you one more thing before we get started.\'a0Let's first of all, let's change our sheet name.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 1:59\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 So let's call this\'a0Median Wage Per Subgroup.\'a0Now, we can actually make different worksheets so\'a0that you can have multiple different graphs going at the same time.\'a0So if you right-click say Copy Sheet, and now go ahead and say Paste Sheet.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 2:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now because it has to connect to the data source, again,\'a0sometimes this can take a little bit of time.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 2:34\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 But once the query is finished,\'a0you will see a duplicate of the worksheet you had before.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 2:42\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 So now that we have this graph, let's see what happens or\'a0how we would break each one of these subcategories up according to the salaries\'a0you would make if you were applying for different visa categories.\'a0Now the variable that refers to different visa categories over here is called\'a0Visa Class.\'a0So it's actually very simple.\'a0The way you would break these bars up into Visa Class is actually very simple.\'a0You drag Visa Class, over, behind Job Title Subgroup on the Columns bar.\'a0So, you can see immediately,\'a0it broke up each of the Job Title Subgroups into the different Visa Classes.\'a0Now also this is a good point to remind you\'a0how long this would have taken to do in Excel.\'a0So this is the power of Tableau,\'a0how quickly it allows you to look at these types of visualizations.\'a0Now let me show you what would happen if you changed the order of\'a0these two different pills.\'a0If we drag Job Title Subgroup behind Visa Class.\'a0Now, the main category you see up here is Visa Class and\'a0it breaks each each Visa Class up into Job Title Subgroups.\'a0Now as we examine this data, it looks like the hypotheses probably aren't supported.\'a0Looks like attorney always makes the most, or\'a0at least makes a very high amount in these visa subcategories.\'a0Teachers usually make the least.\'a0It's not obvious that there's a clear pattern between the different\'a0visa classes.\'a0But perhaps you aren't satisfied with that and you want to know your data more.\'a0You want to find some more details and really make sure you understand it.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 4:17\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Well the first thing you can do, is you can hover over each bar and\'a0it will actually tell you the exact value of the bar.\'a0So if it's hard to see from just the axis, you can see here that it says 185,000\'a0is the median paid wage for an attorney who's applying for an E-3 Australian visa.\'a0You can actually get more details from that, so\'a0if you right-click Go to View Data.\'a0Now the summary page is what we just saw when we hovered over the bar.\'a0But if you go to Underlying data, it will actually give you the raw data\'a0that is used to calculate and compute the median for that particular bar.\'a0So it has every single field shown.\'a0You can also unclick this to show just specific fields.\'a0But let's keep all fields shown for right now.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 5:05\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 And as we scroll through, we can look to see if there's anything that catches our\'a0eye that might be a little weird.\'a0And one thing you might notice, especially when you get here,\'a0is that there seems to be a lot of New York listed as the cities that\'a0people are applying to work for for this particular visa.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 5:23\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 You might begin to wonder, well is this true for the other attorney classes, and\'a0other visa classes?\'a0Cuz when we go back to our chart here,\'a0you see that this particular bar is particularly high compared to the others.\'a0So, we might wanna keep this in the back of our mind for later.\'a0Now another think I want you to notice, is down here in this corner,\'a0it shows you how many rows were included in that bar.\'a0So how many rows in our entire data set we're in the visa class of\'a0E-3 Australian and we're also in the sub group category of attorney.\'a0You can see when you come back to Summary,\'a0it's only one row because according to that aggregation, you only have one row.\'a0So this would be one way that you can find out more about\'a0the data that's going in each one of these bars.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 6:09\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 There's some things that you'll likely only pick up by scrolling through\'a0the broad data itself.\'a0But there are other things you might want to know that Tableau can tell you in\'a0a much quicker way.\'a0For example, there's a quicker way to know how many items go into each bar.\'a0Look at what happens when you put the number of records onto the Row shelf.\'a0Number of Records is a measure that Tableau automatically makes for you.\'a0If we put it behind median of the paid wage on rows,\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 6:36\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 you can see that down here first of all,\'a0it automatically makes another graph right underneath the Visa Class.\'a0And this gives you the number of records in each one of these bars.\'a0So if you hover over one of these bars,\'a0it will tell you exactly how many records went into this particular bar.\'a0Now, an interesting interesting feature of Tableau is that, once you have these\'a0variables in your workspace, it will put that information in what they call\'a0the tooltip, which is the information you get when you hover over the data point.\'a0So you can see now that, just because we made this graph with a number of records,\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 7:14\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 you now see the number of records when you hover over this particular bar in\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 7:20\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 the paid wage per year graph.\'a0So there's another way to get this information on the tool tip.\'a0Even if you don't want to make the number of records on the graph itself.\'a0So to show you how to do this, fist of all, let's take this off of the graph, and\'a0we do that by simply taking it off the shelf.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 7:38\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 And, instead, we're gonna put Number of Records on this icon here,\'a0which is the Detail.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 7:46\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 They call it the property.\'a0Looks like a button to me, but they call it the property, of the marks card.\'a0So put Numbers of Records on the Detail.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 7:55\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now you can see here that the pill is in the marks card but\'a0they didn't make any type of graph on the worksheet.\'a0However, when you hover over each one of these bars,\'a0now the number of records is included in the tool tip.\'a0So the Detail button is a way that you can use the marks card\'a0to include more details in your graph.\'a0We'll come back to this later.\'a0This is a good preview of how the marks card works and\'a0how it can do some interesting and weird things,\'a0in addition to just changing the formatting of your graph.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 8:26\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now, what if you want to get a quick sense of how variable the salaries\'a0are within each category?\'a0Cuz, that might give you an idea of how reliable each one of these medians are.\'a0One way to do that would be to use a standard deviation calculation.\'a0The standard deviation is a measure of the spread of the values within a certain\'a0variable.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 8:44\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Any idea how to do that?\'a0This is gonna be a little tricky, you would have had to pay very closeattention to something I didn't point out in previous videos.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 8:52\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Okay, the way to do this,\'a0is to use a different type of aggregation over Paid Wage Per Year.\'a0So go ahead and drag Paid Wage per Year to Rows and\'a0this time change the aggregation to standard deviation.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 9:06\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now there are two different types of standard deviation that you're gonna\'a0see here.\'a0There is the standard deviation that has in parenthesis POP, that stands for\'a0population.\'a0This is the population standard deviation.\'a0And you can use this in two different cases.\'a0I'm not gonna go through the math here of how the standard deviation is calculated,\'a0by the way.\'a0I'm just gonna tell you which one you would use to report\'a0the dispersion of the data in different circumstances.\'a0So the population standard deviation is used when you either have a really,\'a0really large sample of the general population that\'a0you think represents the general population very well.\'a0Or, when you don't care if the sample you have relates to the general population.\'a0So if all you wanna do is describe your specific data set and you don't care how\'a0that relates to other data sets, you can use the population standard deviation.\'a0If on the other hand,\'a0you want to interpret your data as if it does represent the general population.\'a0And you think that you probably have some type of biased sample or\'a0it may not be the perfect representation of the general population.\'a0Then you use the standard deviation, the normal one.\'a0So that's the one we're gonna use here, because we want to interpret our data\'a0as if it would apply to us, even though we know we are not in this data set.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 10:16\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 So let's go ahead and click on that.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 10:21\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 So now you see here that we have the standard deviation for\'a0each one of these bars in this plot underneath it.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 10:28\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now, in terms of interpretation, I told you before that the standard deviation\'a0represents the spread of the values within each one of these bars up here.\'a0So, if the standard deviation is really large,\'a0like in these cases here, that usually means something's up.\'a0In other words, it probably means you have some extreme outliers in your data.\'a0Outliers are values that are very, very different from the rest of your data.\'a0They're usually much larger or much smaller.\'a0I've posted a link to a great video online that will show you how even one outlier in\'a0your data set can really affect, especially your average values and\'a0your standard deviation values.\'a0In the meantime, let's take these standard deviation plots as a warning signal that\'a0we might have outliers in our data.\'a0And so, let's add check for outliers to our analysis plan.\'a0Since, these outliers might include many include many other aspects of\'a0our analysis, we'll want to address these outliers or their possibility very soon.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 11:25\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Now, I'd like to show you two last things before we finish this video.\'a0The first is a reminder about how we can take this graph off and\'a0still get the information and the tools.\'a0One way to do that is what I showed you before.\'a0You can simply take this pill off and then move the Paid Wage Per Year to\'a0the Detail and change the aggregation again, but that takes a lot of steps.\'a0One way you can do that faster is if you press the Shift key,\'a0you can move this pill directly to the Detail bar.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 11:58\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 So now the graph is gone, but if you hover over each bar,\'a0you'll see that standard deviation of Paid Wage Per Year is in the tool tip.\'a0So that's an easy way to get more information quickly.\'a0The last thing I wanted to show you, is that there's\'a0one other way you can save your data without exporting it that's very useful,\'a0so we don't have to make the graphs each time.\'a0Go ahead and go to File > Save As.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 12:23\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 And this time save it as a Tableau Workbook and\'a0save it in some place that you'll know where to find there.\'a0So if you save it as a workbook you won't have to make the charts each time.\'a0So this will be useful for later.\cf4 \cb1 \
+\pard\pardeftab720\sl520\qc\partightenfactor0
+
+\fs44 \cf5 \cb3 12:39\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs48 \cf2 Great job.\'a0We learned a couple things today.\'a0First of all,\'a0we learned from our data analysis that the type of visa you apply for probably\'a0doesn't affect the salary you would make in these different job subcategories.\'a0So as we move forward with our analysis,\'a0we aren't gonna worry about visa class anymore.\'a0In analyzing this, we also learned about Tableau.\'a0We learned what happens when you put multiple different variables\'a0in either the Column shelf or the Row shelf.\'a0We also learned how you can use tool tips\'a0to get more information about the data you're looking at.\cf4 \cb1 \
+
+\f3\b\fs44 \cf2 \cb3 \
+\
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+
+\fs60 \cf4 Digging Deeper Using the Rows and Columns Shelves:\
+\pard\pardeftab2311\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic 1__#$!@%!#__Pasted Graphic.png \width17320 \height11960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\f3\b\fs60 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+\cf4 \
+\
+\
+\pard\pardeftab2311\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic 1__#$!@%!#__Pasted Graphic 1.png \width13480 \height8400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+\pard\pardeftab2311\pardirnatural\partightenfactor0
+
+\f3\b\fs60 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa400\partightenfactor0
+
+\fs30 \cf4 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs44 \cf2 \
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\b0\fs36 \cf4 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs58 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f7\b\fs54 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b\fs44 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \
+\
+\
+\
+\
+\
+}
